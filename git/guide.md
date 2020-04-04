@@ -6,7 +6,7 @@
 ## This is a H2
 ### This is a H3
 ```
-
+### 예시
 # This is a H1
 ## This is a H2
 ### This is a H3
@@ -17,14 +17,17 @@
 	> This is a first blockqute.
 	>> this is a second bolckqute
 ```
+### 예시
 > This is a first blockqute.
 	>> this is a second bolckqute
+
 
 ## 목록
 ```
 	1. 첫번째
 	2. 두번째
 ```
+### 예시
 1. 첫번째
 2. 두번째
 	
@@ -43,6 +46,7 @@
 	  - 파랑
 ```
 
+### 예시
 * 빨강
  * 녹색
 	* 파랑
@@ -67,7 +71,7 @@
 ```
 
 
-##수평선
+## 수평선
 ```
 * * *
 
@@ -79,13 +83,14 @@
 
 ---------------------------------------
 ```
-
+### 예시
 ---
 
-##외부링크
+
+## 외부링크
 ```
 [링크](http://url "링크 설명- 마우스 hover시 나타는 설명문구)"
 ```
-
+### 예시
 [google](http://www.google.co.kr "구글")
 
