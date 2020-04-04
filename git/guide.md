@@ -68,7 +68,7 @@
 ### 코드블럭
 <pre>
 <code>
-	"<pre>
+	<pre>
 	<code>
 		public class BootSpringBootApplication {
 		  public static void main(String[] args) {
@@ -77,7 +77,23 @@
 
 		}
 	</code>
-	</pre>"
+	</pre>
 </code>
-</pre>	  
+</pre>
+
+
+##수평선
+<pre>
+<code>
+* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+</code>
+</pre>
 
