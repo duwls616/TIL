@@ -8,6 +8,9 @@
 ### This is a H3
 </code>
 </pre>
+# This is a H1
+## This is a H2
+### This is a H3
 
 
 ## BlockQuote
@@ -17,7 +20,8 @@
 	> > this is a second bolckqute
 </code>
 </pre>
-
+> This is a first blockqute.
+	> > this is a second bolckqute
 
 ## 목록
 ### 순서있는 목록
@@ -27,6 +31,9 @@
 	2. 두번째
 </code>
 </pre>
+1. 첫번째
+2. 두번째
+	
 
 ###순서없는 목록
 <pre>
@@ -61,7 +68,7 @@
 ### 코드블럭
 <pre>
 <code>
-	<pre>
+	"<pre>
 	<code>
 		public class BootSpringBootApplication {
 		  public static void main(String[] args) {
@@ -70,7 +77,7 @@
 
 		}
 	</code>
-	</pre>
+	</pre>"
 </code>
 </pre>	  
 
