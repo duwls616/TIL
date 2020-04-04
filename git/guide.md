@@ -15,14 +15,13 @@
 ## BlockQuote
 ```c
 	> This is a first blockqute.
-	> > this is a second bolckqute
+	>> this is a second bolckqute
 ```
 > This is a first blockqute.
-	> > this is a second bolckqute
+	>> this is a second bolckqute
 
 ## 목록
-### 순서있는 목록
-```c
+```
 	1. 첫번째
 	2. 두번째
 ```
@@ -30,8 +29,7 @@
 2. 두번째
 	
 
-###순서없는 목록
-```c
+```
 	* 빨강
 	 * 녹색
 	  * 파랑
@@ -47,19 +45,19 @@
 
 * 빨강
  * 녹색
- * 파랑
+	* 파랑
  
 + 빨강
  + 녹색
- + 파랑
+	+ 파랑
   
 - 빨강
  - 녹색
- - 파랑
+	- 파랑
 
 ## 코드블럭
 
-```c
+```java
 		public class BootSpringBootApplication {
 		  public static void main(String[] args) {
 			System.out.println("Hello, Honeymon");
@@ -70,7 +68,7 @@
 
 
 ##수평선
-```c
+```
 * * *
 
 ***
@@ -81,4 +79,13 @@
 
 ---------------------------------------
 ```
+
+---
+
+##외부링크
+```
+[링크](http://url "링크 설명- 마우스 hover시 나타는 설명문구)"
+```
+
+[google](http://www.google.co.kr "구글")
 
