@@ -47,18 +47,18 @@
 
 * 빨강
  * 녹색
-  * 파랑
+ * 파랑
  
 + 빨강
  + 녹색
-  + 파랑
+ + 파랑
   
 - 빨강
  - 녹색
-  - 파랑
+ - 파랑
 
-## 코드
-### 코드블럭
+## 코드블럭
+
 ```c
 		public class BootSpringBootApplication {
 		  public static void main(String[] args) {
