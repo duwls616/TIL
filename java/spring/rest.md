@@ -27,4 +27,4 @@ public String getText(){
 
 ```
 screenshot   
-![screenshot1](./img/rest-img1.png)
+![screenshot1](../../img/rest-img1.png)
