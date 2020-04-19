@@ -18,8 +18,9 @@ URI + GET/POST/PUT/DELETE/....
 >   jsp와 달리 순수한 데이터를 반환하는 형태   
 문자열이나 json, xml 사용
    
+1. 문자열반환      
 ```java
-//문자열 반환
+//produces의 속성값은 MIME TYPE의 종류
 @GetMapping(value="/getText", produces ="text/plain; charset=UTF-8")
 public String getText(){
 	return "안녕하세요";
@@ -27,4 +28,32 @@ public String getText(){
 
 ```
 screenshot   
-![screenshot1](../../img/rest-img1.png)
+![screenshot1](../../img/rest-img1.png)   
+   
+2. 객체의 반환   
+```java
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class SampleVO {
+	private Integer mno;
+	private String firstName;
+	private String lastName;
+}
+```
+Lombok 어노테이션 설명추가      
+* AllArgsConstructor : 비어있는 생성자 자동생성
+* NoArgsConstructor : 모든 속성 사용하는 생성자 자동생성   
+   
+```java
+@GetMapping(value="/getSample",
+	produces = {MediaType.APPLICATION_JSON_UTF8_VALUE,
+				MediaType.APPLICATION_XML_VALUE})
+	public SampleVO getSample(){
+		return new SampleVO(112, "스타", "로드");
+	}
+```   
+screenshot   
+![screenshot2](../../img/rest-img2.png)   
+![screenshot2](../../img/rest-img3.png)   
