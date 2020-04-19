@@ -93,4 +93,14 @@
 ```
 ### 예시
 [google](http://www.google.co.kr "구글")
-
+   
+    
+	
+## 이미지 넣기	
+```
+![이미지 이름](이미지 URL)
+```   
+   
+git에 img폴더를 만들고 링크해주면 편하다.   
+### 예시  
+![ex_screenshot](./img/screenshot.png)   
