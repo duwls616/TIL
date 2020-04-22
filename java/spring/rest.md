@@ -101,3 +101,21 @@ public List<SampleDAO> getList(){
    
 ![screenshot6](../../img/rest-img6.png)
 ![screenshot7](../../img/rest-img7.png)   
+   
+    
+    
+###  @RestController의 파라미터
+> @Controller에서 사용하던 타입이나 사용자가 정의한 타입을 사용한다. 여기에 추가로 몇가지 어노테이션을 사용한다.   
+
+#### @PathVariable   
+> URL자체에 데이터를 식별할 수 있는 정보들을 표현하는 경우가 많으므로 경로의 일부를 파라미터로 사용   
+   
+```java
+@GetMapping("/product/{cat}/{pid}")
+public String[] getPath(@PathVariable("cat") String cat, @PathVariable("pid") Integer pid){
+	return new String[] { "category: "+cat, "productid:"+pid}
+}   
+```   
+   
+* /sample/product/dogs/1 입력한 경우
+![screenshot8](../../img/rest-img8.png)     
