@@ -14,11 +14,12 @@ URI + GET/POST/PUT/DELETE/....
 4. @CrossOrigin : Ajax의 크로스 도메인 문제를 해결해주는 어노테이션   
 5. @RequestBody : JSON 데이터를 원하는 타입으로 바인딩 처리   
    
+     
 ### @RestController
 >   jsp와 달리 순수한 데이터를 반환하는 형태   
 문자열이나 json, xml 사용
    
-1. 문자열반환      
+#### 문자열반환      
 ```java
 //produces의 속성값은 MIME TYPE의 종류
 @GetMapping(value="/getText", produces ="text/plain; charset=UTF-8")
@@ -30,7 +31,8 @@ public String getText(){
 screenshot   
 ![screenshot1](../../img/rest-img1.png)   
    
-2. 객체의 반환   
+    
+#### 객체의 반환   
 ```java
 
 @Data
@@ -59,7 +61,7 @@ screenshot
 ![screenshot3](../../img/rest-img3.png)   
    
    
-3. 컬렉션 타입의 객체반환   
+#### 컬렉션 타입의 객체반환   
 ```java
 // 1부터 10까지 루프처리
 @GetMapping(value="/getList")
