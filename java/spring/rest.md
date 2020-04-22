@@ -56,4 +56,21 @@ Lombok 어노테이션 설명추가
 ```   
 screenshot   
 ![screenshot2](../../img/rest-img2.png)   
-![screenshot2](../../img/rest-img3.png)   
+![screenshot3](../../img/rest-img3.png)   
+   
+   
+3. 컬렉션 타입의 객체반환   
+```java
+// 1부터 10까지 루프처리
+@GetMapping(value="/getList")
+public List<SampleDAO> getList(){
+	return IntStream.range(1,10).mapToObj(i -> new SampleVO(i, i+"First", i+ " Last")
+	.collect(Collector.toList());
+}
+```
+   
+* 브라우저를 통해 /sample/getList 한 경우   
+  ![screenshot4](../../img/rest-img4.png)   
+    
+* 브라우저를 통해 /sample/getList.json 한 경우   
+  ![screenshot5](../../img/rest-img5.png)   	
