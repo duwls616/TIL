@@ -76,3 +76,28 @@ public List<SampleDAO> getList(){
     
 * 브라우저를 통해 /sample/getList.json 한 경우   
   ![screenshot5](../../img/rest-img5.png)   	
+     
+	
+#### ResponseEntity 타입	
+```java
+//데이터와 함께 HTTP 헤더 상태메시지등을 같이 전달하는 용도
+	@GetMapping(value = "/check", params = {"height", "weight"})
+	public ResponseEntity<SampleVO> check(Double height, Double weight){
+		SampleVO vo = new SampleVO(0, ""+height, ""+weight);
+		
+		ResponseEntity<SampleVO> result = null;
+		
+		if(height < 150) {
+			result = ResponseEntity.status(HttpStatus.BAD_GATEWAY).body(vo);
+		}else {
+			result = ResponseEntity.status(HttpStatus.OK).body(vo);
+		}
+		
+		return result;
+	}
+```	
+   
+* height 120을 넘기면 데이터와 502 메시지가 전송된다.   
+   
+![screenshot6](../../img/rest-img6.png)
+![screenshot7](../../img/rest-img7.png)   
