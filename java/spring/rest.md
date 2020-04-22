@@ -117,5 +117,5 @@ public String[] getPath(@PathVariable("cat") String cat, @PathVariable("pid") In
 }   
 ```   
    
-* /sample/product/dogs/1 입력한 경우
+* /sample/product/dogs/1 입력한 경우    
 ![screenshot8](../../img/rest-img8.png)     
