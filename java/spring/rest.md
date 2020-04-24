@@ -120,3 +120,13 @@ public String[] getPath(@PathVariable("cat") String cat, @PathVariable("pid") In
 * /sample/product/dogs/1 입력한 경우    
    
 ![screenshot8](../../img/rest-img8.png)     
+   
+#### @RequestBody  
+> 전달된 요청의 내용을 이용해서 해당 파라미터의 타입으로 변환을 요구   
+    
+```java	
+@PostMapping("/ticket")
+	public Ticket convert(@RequestBody Ticket ticket) {
+		return ticket;
+	}
+```	
