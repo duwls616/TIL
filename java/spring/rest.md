@@ -19,7 +19,7 @@ URI + GET/POST/PUT/DELETE/....
 >   jsp와 달리 순수한 데이터를 반환하는 형태   
 문자열이나 json, xml 사용
    
-#### 문자열반환      
+#### 1.문자열반환      
 ```java
 //produces의 속성값은 MIME TYPE의 종류
 @GetMapping(value="/getText", produces ="text/plain; charset=UTF-8")
@@ -32,7 +32,7 @@ screenshot
 ![screenshot1](../../img/rest-img1.png)   
    
     
-#### 객체의 반환   
+#### 2.객체의 반환   
 ```java
 
 @Data
@@ -44,9 +44,10 @@ public class SampleVO {
 	private String lastName;
 }
 ```
-Lombok 어노테이션 설명추가      
-* AllArgsConstructor : 비어있는 생성자 자동생성
-* NoArgsConstructor : 모든 속성 사용하는 생성자 자동생성   
+   
+* Lombok 어노테이션 설명추가      
+- AllArgsConstructor : 비어있는 생성자 자동생성
+- NoArgsConstructor : 모든 속성 사용하는 생성자 자동생성   
    
 ```java
 @GetMapping(value="/getSample",
@@ -56,12 +57,12 @@ Lombok 어노테이션 설명추가
 		return new SampleVO(112, "스타", "로드");
 	}
 ```   
-screenshot   
+      
 ![screenshot2](../../img/rest-img2.png)   
 ![screenshot3](../../img/rest-img3.png)   
    
    
-#### 컬렉션 타입의 객체반환   
+#### 3.컬렉션 타입의 객체반환   
 ```java
 // 1부터 10까지 루프처리
 @GetMapping(value="/getList")
@@ -78,7 +79,7 @@ public List<SampleDAO> getList(){
   ![screenshot5](../../img/rest-img5.png)   	
      
 	
-#### ResponseEntity 타입	
+#### 4.ResponseEntity 타입	
 ```java
 //데이터와 함께 HTTP 헤더 상태메시지등을 같이 전달하는 용도
 	@GetMapping(value = "/check", params = {"height", "weight"})
@@ -107,7 +108,7 @@ public List<SampleDAO> getList(){
 ###  @RestController의 파라미터
 > @Controller에서 사용하던 타입이나 사용자가 정의한 타입을 사용한다. 여기에 추가로 몇가지 어노테이션을 사용한다.   
 
-#### @PathVariable   
+#### 1.@PathVariable   
 > URL자체에 데이터를 식별할 수 있는 정보들을 표현하는 경우가 많으므로 경로의 일부를 파라미터로 사용   
    
 ```java
@@ -121,7 +122,7 @@ public String[] getPath(@PathVariable("cat") String cat, @PathVariable("pid") In
    
 ![screenshot8](../../img/rest-img8.png)     
    
-#### @RequestBody  
+#### 2.@RequestBody  
 > 전달된 요청의 내용을 이용해서 해당 파라미터의 타입으로 변환을 요구   
     
 ```java	
