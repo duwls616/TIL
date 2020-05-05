@@ -12,7 +12,7 @@ Advice : 적용할 관심사
 |----|--------|
 |Before Advice|Target의 joinPoint를 호출하기전 실행된다. 코드 실행자체에는 관여할 수 없다.|
 |After Returning Advice|모든 실행이 정상적으로 이루어진 뒤에 실행|
-|After Throwing Advice|예외가 발생한 뒤에 동작|
+|After Throwing Advice|예외가 발생한 뒤에 실행|
 |Ater Advice|정상적으로 실행되거나 예외가 발생했을 때 구분없이 실행|   
 |Around Advice|메서드의 실행자체를 제어할 수 있다. 대상 메서드를 호출하고 결과나 예외를 처리할 수 있다|  
        
