@@ -81,7 +81,7 @@ public Object logTime(ProceedingJoinPoint pjp) {
 	
 	Object result = null;
 	try {
-		result = pjp.proceed();
+		result = pjp.proceed(); //실행을 직접 관여
 	}catch(Throwable e) {
 		e.printStackTrace();
 	}
