@@ -4,12 +4,15 @@
 이런 관심사를(cross-conern) 분리하여 공통적으로 작성함으로써 개발자는 핵심로직에만 집중할 수 있다.   
     
 * 용어  	
+   
 Target : 핵심 비즈니스 로직   
 Proxy : Target을 감싸고있는 부분, 외부에서 이 Proxy를 통해 Target객체의 JointPoint 를 호출한다.   
 JoinPoint : Target이 가지고 있는 여러 메소드.   
 Pointcut : Advice를 어느 Target에 적용할 것인지 결정하는 행위    
 Advice : 적용할 관심사    
     
+	   
+	   
 동작 위치에 따라 다음과 같이 구분된다.    
    
 |구분|설명|
