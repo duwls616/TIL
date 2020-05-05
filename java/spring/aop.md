@@ -93,6 +93,6 @@ public Object logTime(ProceedingJoinPoint pjp) {
 }
 ```
 ProceedingJoinPoint는 AOP대상이 되는 Target 이나 파라미터를 파악, 직접 실행을 결정할 수도 있다.   
-메서드의 실행 결과를 직접 반환하는 형식으로 작성해야한다.     
+리턴타입은 void가 아니고 메서드의 실행 결과를 직접 반환하는 형식으로 작성해야한다.     
 Around 다음 Before 수행
    
