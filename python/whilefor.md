@@ -1,9 +1,9 @@
 # While And For
 
 ## While
-> while 조건문 :
-  &nbsp;&nbsp;&nbsp;수행할 문장1
-  &nbsp;&nbsp;&nbsp;수행할 문장2
+> while 조건문 :    
+  &nbsp;&nbsp;&nbsp;수행할 문장1    
+  &nbsp;&nbsp;&nbsp;수행할 문장2   
   &nbsp;&nbsp;&nbsp;수행할 문장3     
       
 	  
@@ -26,9 +26,9 @@
 	 
 	 
 ## for
-> for 변수 in 리스트(또는 튜플, 문자열):
-		수행할 문장1
-		수행할 문장2
+> for 변수 in 리스트(또는 튜플, 문자열):    
+	&nbsp;&nbsp;&nbsp;수행할 문장1    
+	&nbsp;&nbsp;&nbsp;수행할 문장2    
 		  
 		  
 ### 예시
