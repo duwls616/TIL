@@ -2,10 +2,10 @@
     
 ## if문
 > if 조건문:    
-	&nbsp;실행할 문장    
-		실행할 문장    
+	&nbsp;&nbsp;&nbsp;&nbsp;실행할 문장    
+	&nbsp;&nbsp;&nbsp;&nbsp;실행할 문장    
   elif 조건문:    
-		실행할 문장   
+	&nbsp;&nbsp;&nbsp;&nbsp;실행할 문장   
 * 여기서 주의할점은 실행할 문장의 tab간격이 동일해야 함.   
 * 아무것도 실행하고 싶지 않을땐 pass
     
