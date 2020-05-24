@@ -98,5 +98,8 @@ try:
 	say_nick('천사')
 except MyError as e:
 	print(e)
+	
+
+허용되지 않는 별명입니다.	
 ```   
  
