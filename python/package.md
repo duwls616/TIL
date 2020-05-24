@@ -1,13 +1,13 @@
 # 패키지
 > 파이썬의 패키지는 디렉터리와 파이썬모듈로 이루어져 있다.
 game/     
-	__init__.py     
-	sound/     
-		__init__.py     
-		echo.py     
-	graphic/     
-		__init__.py     
-		render.py     
+&nbsp;&nbsp;__init__.py     
+&nbsp;&nbsp;sound/     
+&nbsp;&nbsp;&nbsp;&nbsp;__init__.py     
+&nbsp;&nbsp;&nbsp;&nbsp;echo.py     
+&nbsp;&nbsp;graphic/     
+&nbsp;&nbsp;&nbsp;&nbsp;__init__.py     
+&nbsp;&nbsp;&nbsp;&nbsp;render.py     
      
      
 여기서 __init__.py 의 용도는 해당 디렉터리가 패키지의 일부임을 알려주는 역할을 한다.          
