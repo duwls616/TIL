@@ -1,7 +1,7 @@
 # 패키지
 > 파이썬의 패키지는 디렉터리와 파이썬모듈로 이루어져 있다.      
 game/     
-&nbsp;&nbsp;__init__.py     
+&nbsp;&nbsp;____init____.py     
 &nbsp;&nbsp;sound/     
 &nbsp;&nbsp;&nbsp;&nbsp;__init__.py     
 &nbsp;&nbsp;&nbsp;&nbsp;echo.py     
